@@ -16,7 +16,9 @@ import java.util.Random;
  * arr     = {0, 0, 0, 0, 0}
  *  
  * 랜덤숫자 : 1
- * isFirst = {false , true , false , false , false}
+ * isFirst = 
+ * 
+ * {false , true , false , false , false}
  * arr     = {1, 0, 0, 0, 0}
  * 
  * 랜덤숫자 : 3

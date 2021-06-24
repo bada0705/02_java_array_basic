@@ -53,9 +53,11 @@ public class ArrayEx08_정답예시 {
 		}
 		System.out.println();
 		
+		
 		System.out.print("정오표 : ");
 		for (int i=0; i<5; i++) {
-			System.out.print(mark[i]+" ");
+			System.out.print(mark[i]+
+					" ");
 		}
 		System.out.println();
 		System.out.println("성적 : " + totalGrade);

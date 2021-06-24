@@ -1,4 +1,7 @@
 package step_01.array;
+
+import java.util.Random;
+
 /*
  * # OMR카드
  * 
@@ -18,10 +21,51 @@ package step_01.array;
 public class ArrayEx08_문제 {
 
 	public static void main(String[] args) {
+		Random ran = new Random();
 		
 		int[] answer = {1, 3, 4, 2, 5};
 		int[] hgd = new int[5];
+		char [] mark = new char [5];
+		int total = 0;
+		
+		
+		for(int i = 0; i<5; i++) {
+			hgd[i] = ran.nextInt(5)+1;
+			}
+		
+		for (int i = 0; i<5; i++) {
+			if(answer[i] ==hgd[i]) {
+				mark[i] = 'O' ;
+				total += 20;
+			}
+			else {
+				mark[i] = 'X';
+			}	
+		}
+		 	
+		
+		System.out.print("Answer : ");
+		for (int i=0; i<5; i++) {
+			System.out.print(answer[i]+" ");
+		}
+		System.out.println();
+		
+		
+		System.out.print("hgd    : ");
+		for (int i=0; i<5; i++) {
+			System.out.print(hgd[i]+" ");
+		}
+		System.out.println();
+		
+		System.out.print("정오표 : ");
+		for (int i=0; i<5; i++) {
+			System.out.print(mark[i]+" ");
+		}
+		System.out.println();
+		
+		System.out.println("성적 :  " + total );
 		
 	}
+	
 	
 }

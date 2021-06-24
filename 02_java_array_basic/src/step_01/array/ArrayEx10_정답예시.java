@@ -29,7 +29,9 @@ public class ArrayEx10_정답예시 {
 			
 			System.out.println("\n[1]번복권 결과확인");
 			System.out.println("[2]번복권 결과확인");
-			System.out.println("[3]번복권 결과확인");
+			System.out.println("[3]번복권 결과확"
+					+ ""
+					+ "");
 			System.out.println("[0]종료");
 			System.out.print("메뉴 선택 : ");
 			sel = scan.nextInt();
@@ -71,8 +73,10 @@ public class ArrayEx10_정답예시 {
 			else                 continue;		
 			
 			
-			if (isWin) 		System.out.println("\n당첨");
+			if (isWin) 	
+				System.out.println("\n당첨");
 			else 			System.out.println("\n꽝");
+			
 			
 		}
 		

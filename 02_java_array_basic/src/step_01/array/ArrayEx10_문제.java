@@ -24,16 +24,59 @@ public class ArrayEx10_문제 {
 		int sel      = 0;
 		
 		while (true) {
-					
+				
+			boolean isWin = false;
+			int cnt		  = 0;
+			
+			
 			System.out.println("\n[1]번복권 결과확인");
 			System.out.println("[2]번복권 결과확인");
 			System.out.println("[3]번복권 결과확인");
 			System.out.println("[0]종료");
 			System.out.print("메뉴 선택 : ");
 			sel = scan.nextInt();
-								
 			
+			if(sel ==1) {
+				for(int i = 0; i<8;i++) {
+					if(lotto1[i] ==7) {
+						cnt++;
+					if(cnt ==3 ) isWin=true ;
+					}
+					else {
+						cnt=0;
+					}
+				}
+			}
+			else if (sel ==2) {
+				for(int i =0; i<8; i++) {
+					if(lotto2[i] == 7 ) {
+						cnt++;
+						if(cnt==3) isWin = true;
+					}
+					else {
+						cnt=0;
+					}
+				}
+			}
+			else if (sel==3) {
+				for(int i =0; i<8; i++) {
+					if(lotto3[i]==7) {
+						cnt++;
+						if(cnt ==3) isWin= true;
+					}
+					else {
+						cnt=0;
+					}
+				}
+			}
+			else if (sel==0) break;
+			else             continue;
+			
+			if (isWin)
+				System.out.println("당첨");
+			else  			System.out.println("꽝");
 		}
+		scan.close();
 		
 	}
 }

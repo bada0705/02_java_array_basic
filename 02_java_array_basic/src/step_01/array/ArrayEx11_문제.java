@@ -37,7 +37,19 @@ public class ArrayEx11_문제 {
 		
 		boolean[] isFirst = new boolean[5];
 		int[] arr   = new int[5];
-					
+		int getRandomInt = 0;
+		int index= 0;
+		
+		while (index <5){
+			
+			getRandomInt = ran.nextInt(5);
+			
+			if(isFirst[getRandomInt] ==false ) {
+			   isFirst[]
+			}
+			
+		}
+		
 	}
 	
 }
