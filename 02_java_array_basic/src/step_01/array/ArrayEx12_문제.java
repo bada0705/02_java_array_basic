@@ -13,15 +13,26 @@ public class ArrayEx12_문제 {
 		Scanner scan = new Scanner(System.in);
 		
 		int[] arr = {10,20,30,40,50};
-		int getIndex1 , getIndex2;
-		int getValue1 , getValue2;
+		int getIndex1 =0;
+		int getIndex2 =0;
+		int getValue1=0; 
+		int getValue2=0;
 		int temp = 0;
 		
 		// 문제 1) 인덱스 2개를 입력받아 값 교체하기
 		// 예    1) 인덱스1 입력 : 1
 		//		   인덱스2 입력 : 3
 		//		  {10, 40, 30, 20, 50}
-
+		System.out.println("인덱스1입력 :  ");
+		getIndex1 = scan.nextInt();
+		System.out.println("인덱스2입력 :   ");
+		getIndex2=scan.nextInt();
+		
+		temp = arr [getIndex1];
+		arr[getIndex1] = arr[getIndex2];
+		arr[getIndex2]=temp;
+		
+		
 
 		
 		// 문제 2) 값 2개를 입력받아 값 교체하기

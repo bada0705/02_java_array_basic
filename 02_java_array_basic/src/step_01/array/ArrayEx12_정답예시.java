@@ -20,7 +20,10 @@ public class ArrayEx12_정답예시 {
 		int getValue2 = 0;
 		int temp      = 0;
 		
-		// 문제 1) 인덱스 2개를 입력받아 값 교체하기
+		// 문제 1) 인덱스 
+		
+		
+	
 		// 예    1) 인덱스1 입력 : 1
 		//		    인덱스2 입력 : 3
 		//		    {10, 40, 30, 20, 50}
@@ -37,6 +40,7 @@ public class ArrayEx12_정답예시 {
 		for (int i=0; i<5; i++) {
 			System.out.print(arr[i] + " ");
 		}
+		
 		System.out.println();
 		
 		

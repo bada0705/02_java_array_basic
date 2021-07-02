@@ -44,11 +44,23 @@ public class ArrayEx11_문제 {
 			
 			getRandomInt = ran.nextInt(5);
 			
-			if(isFirst[getRandomInt] ==false ) {
-			   isFirst[]
+			if(isFirst[getRandomInt] == false) {
+				isFirst[getRandomInt]=true ;
+				arr[index]=getRandomInt;
+				index++;
+				
 			}
 			
 		}
+		
+		System.out.println("arr : ");
+		for (int i=0; i<5; i++) {
+			 System.out.println(arr[i] + "  " );
+		}
+		
+		
+		
+		
 		
 	}
 	
